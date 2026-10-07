@@ -1,0 +1,40 @@
+A1 · traça
+A1: 5 15 (bé)
+
+A2 · text i número
+A2:
+52
+3
+7
+(bé)
+
+A3 · comparar
+A3:
+true
+false
+true
+(bé)
+
+A4 · lògics
+A4:
+true
+false
+(bé)
+
+A5 · bucle
+A5: 10 (bé)
+
+A6 · break i continue
+A6:
+1
+2
+4
+5
+7
+(bé)
+
+--------------------------------------------------
+Resultats de l'exercici B2 (temperatura.js):
+Amb 5 graus: Fa fred
+Amb 18 graus: S'hi està bé
+Amb 30 graus: Fa calor

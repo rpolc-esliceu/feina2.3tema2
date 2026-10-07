@@ -1,0 +1,12 @@
+a) Quines línies donen el mateix resultat als dos llocs?
+Les línies 2 + 3, 'Hola' + ' món', '2' + 3, 10 / 4 i typeof 42 donen exactament el mateix resultat. Això passa perquè formen part del nucli o sintaxi bàsica de JavaScript (ECMAScript), la qual comparteixen tant el navegador com l'entorn de Node.js.
+
+b) Quina línia funciona al navegador i a Node dona error? Per què creus que hi falla?
+La línia alert('Hola') funciona al navegador (mostrant una finestra emergent) però dona un error de tipus "ReferenceError" a Node. Falla perquè alert() és una funció de la interfície gràfica que pertany a l'objecte global "window" del navegador. Com que Node.js s'executa en un terminal de servidor sense entorn visual, aquesta funció no existeix.
+
+c) I quina funciona a Node i al navegador dona error?
+La línia process.version funciona perfectament a Node.js (retornant la versió actual del programa) però llança un error de tipus "ReferenceError" al navegador. Falla al navegador perquè "process" és un objecte global exclusiu de l'entorn de Node.js per interactuar amb el sistema operatiu del servidor, i els navegadors no el tenen per motius de seguretat i disseny.
+
+d) Quin motor fa servir el teu navegador? I Node? Mira la diapositiva «Els motors».
+- El navegador (si fas servir Google Chrome o Microsoft Edge) utilitza el motor V8 de Google. (Si fas servir Firefox, utilitza SpiderMonkey).
+- Node.js utilitza exactament el mateix motor V8 de Google (el de Chrome) adaptat per funcionar fora del navegador directament a la línia de comandes.
