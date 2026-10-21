@@ -1,0 +1,18 @@
+PART A · PREDIU
+
+ESCRIUS             MOSTRA AL FINAL       VALORACIÓ
+3, 5, 0             8                     bé
+0                   0                     bé
+4, -4, 7, 0         7                     bé
+
+A2. Resposta:
+No n'hi ha prou amb la crida de dins del bucle perquè necessitem un primer valor abans d'avaluar la condició del "while (x !== 0)". Si no llegim un número primer de tot, la variable "x" no tindria cap valor definit (seria undefined) i el programa no sabria si ha d'entrar o no al bucle.
+
+--------------------------------------------------
+PART B · EXERCICI B2 (nota.js)
+
+NOTA        SORTIDA
+4.99        Insuficient
+5           Suficient
+8.5         Notable
+11          Nota no vàlida
