@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/headfirst.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Modificat a 6 segons de durada -->
+  <div data-hf-id="hf-u9cy" class="paper" data-composition-id="main"
+       data-start="0" data-duration="6" data-width="1920" data-height="1080">
+    
+    <img data-hf-id="hf-0wtc" id="bit" class="bit" src="assets/bit.svg">
+    <div data-hf-id="hf-ua9t" id="globus" class="globus">Hola món!</div>
+    <h1 data-hf-id="hf-iw80" id="titol" class="titol">El meu primer vídeo</h1>
+    <div data-hf-id="hf-6urm" id="subratllat" class="subratllat"></div>
+    <p data-hf-id="hf-gqqu" id="nota" class="nota">fet amb HTML, CSS i JavaScript</p>
+  </div>
+
+  <script>
+    window.__timelines = window.__timelines || {};
+    const tl = gsap.timeline({ paused: true });
+    
+    tl.from('#bit', { y: 80, opacity: 0, duration: 0.5 }, 0.2);
+    // Modificat al segon 2
+    tl.from('#globus', { scale: 0, duration: 0.5, ease: 'back.out(2)' }, 2);
+    // Modificat al segon 3
+    tl.from('#titol', { y: 40, opacity: 0, duration: 0.5 }, 3);
+    
+    // Pots ajustar opcionalment les següents animacions si vols que vagin després del títol
+    tl.from('#subratllat', { scaleX: 0, duration: 0.5 }, 3.5);
+    tl.from('#nota', { opacity: 0, rotation: -12, duration: 0.5 }, 4.2);
+    
+    window.__timelines['main'] = tl;
+    tl.seek(0);
+  </script>
+</body>
+</html>

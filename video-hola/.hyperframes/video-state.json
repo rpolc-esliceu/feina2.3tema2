@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "historyId": "7fd6f910-2af0-413a-898f-c78d03af3457",
+  "currentRevision": "e9e5e20b-60cd-402f-8f9b-aa23da9a6925",
+  "pendingChanges": false,
+  "files": {
+    "assets/bit.svg": {
+      "hash": "0cee660b1b996564e46a37b2e1740200dca2929b58c985e5438d29efa64dceb6",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/0c/0cee660b1b996564e46a37b2e1740200dca2929b58c985e5438d29efa64dceb6"
+    },
+    "css/fonts.css": {
+      "hash": "d864b32b8a7a43757079558cf2b3de2b7e690a24d1ec4e531c4ce18c6627bbfb",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/d8/d864b32b8a7a43757079558cf2b3de2b7e690a24d1ec4e531c4ce18c6627bbfb"
+    },
+    "css/headfirst.css": {
+      "hash": "298f66d057fe284203c82c6e4ac596d73dbb3d1cd03cd4954e0ec91dc3a55f37",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/29/298f66d057fe284203c82c6e4ac596d73dbb3d1cd03cd4954e0ec91dc3a55f37"
+    },
+    "css/style.css": {
+      "hash": "d982d7e5a028ebb8130e82bb2483ff7e41916eb8d6086c1794fd8cb3dcc4f4bd",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/d9/d982d7e5a028ebb8130e82bb2483ff7e41916eb8d6086c1794fd8cb3dcc4f4bd"
+    },
+    "fonts/Caveat-Regular.ttf": {
+      "hash": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/0b/0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988"
+    },
+    "fonts/Lato-Bold.ttf": {
+      "hash": "8a0aace75d33794eece4b28187bfc1df0bbd2888b5d8a56e01788c8d65d16be1",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/8a/8a0aace75d33794eece4b28187bfc1df0bbd2888b5d8a56e01788c8d65d16be1"
+    },
+    "fonts/Lato-Regular.ttf": {
+      "hash": "d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/d6/d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251"
+    },
+    "fonts/PTM55FT.ttf": {
+      "hash": "cbe732b3b8fd211fd986ebdfc9b870ddeca4faab0bb5425fc509b37f9b4ac804",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/cb/cbe732b3b8fd211fd986ebdfc9b870ddeca4faab0bb5425fc509b37f9b4ac804"
+    },
+    "fonts/PT_Serif-Web-Bold.ttf": {
+      "hash": "038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/03/038ba7336bd7ea14f12ad155bed51a4345cac5153275d521dec3ba04021c526e"
+    },
+    "fonts/PT_Serif-Web-Regular.ttf": {
+      "hash": "a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/a4/a4951fade06ff8f09b7673aa81ffb65a8cd409e24d3289a6dc670bc4dda2557a"
+    },
+    "index.html": {
+      "hash": "6a8369eb41602a82539fdecba8bb1690c59d9fcc1bb4ddd60b5557ba799c014a",
+      "content": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/6a/6a8369eb41602a82539fdecba8bb1690c59d9fcc1bb4ddd60b5557ba799c014a"
+    }
+  },
+  "revisions": {
+    "e9e5e20b-60cd-402f-8f9b-aa23da9a6925": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792774256896,
+      "endedAt": 1792774256898,
+      "files": {
+        "index.html": {
+          "before": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/f8/f8a23ed5bd38777d67bbfb6d1d4687607e3b8907d5cd6cdef978bd2068776b4e",
+          "after": "/home/rpolc/.cache/hyperframes/history/7fd6f910-2af0-413a-898f-c78d03af3457/blobs/6a/6a8369eb41602a82539fdecba8bb1690c59d9fcc1bb4ddd60b5557ba799c014a"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "31be2179-0aef-434f-8e66-fed7850cb0ba"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "b1229614-88b0-45d4-beb9-34349b9c2d0d",
+        "scope": "project",
+        "report": "/home/rpolc/projectes/video-hola/.hyperframes/artifacts/checks/b1229614-88b0-45d4-beb9-34349b9c2d0d.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": true,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792774098590,
+        "contentHash": "55d836d3c73c0bb20f5b9168d8ff3443e14a8d447bb22bd76b63872408fbb96b",
+        "revision": null,
+        "inputFingerprint": "21876ff1423d2f04e871b3d4099c1e85839daeafc430fda6baef19ba2605f28d",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "31be2179-0aef-434f-8e66-fed7850cb0ba",
+        "scope": "project",
+        "report": "/home/rpolc/projectes/video-hola/.hyperframes/artifacts/checks/31be2179-0aef-434f-8e66-fed7850cb0ba.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792774169693,
+        "contentHash": "a2e33e254106d7bd58c319a9147254fe48c86f03423c6c487861beb0da14c673",
+        "revision": null,
+        "inputFingerprint": "21876ff1423d2f04e871b3d4099c1e85839daeafc430fda6baef19ba2605f28d",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "44f366ce-69ba-4889-9fdb-d33cc614cda9",
+      "completedAt": 1792774886150,
+      "output": "/home/rpolc/projectes/video-hola/hola.mp4",
+      "status": "completed",
+      "revision": "e9e5e20b-60cd-402f-8f9b-aa23da9a6925"
+    },
+    "retainedRevisions": [
+      "e9e5e20b-60cd-402f-8f9b-aa23da9a6925"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

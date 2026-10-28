@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head><script data-hf-gsap-fallback>
+(function(){
+  var cdnBase="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/";
+  var loaded={};
+  function loadFallback(file){
+    if(loaded[file])return loaded[file];
+    return loaded[file]=new Promise(function(ok,fail){
+      var s=document.createElement("script");
+      s.src=cdnBase+file;s.hfGsapFallback=true;s.onload=ok;s.onerror=fail;
+      document.head.appendChild(s);
+    });
+  }
+  document.addEventListener("error",function(e){
+    var t=e.target;
+    if(!t||t.tagName!=="SCRIPT"||!t.src||t.hfGsapFallback)return;
+    var m=t.src.match(/gsap[^/]*\/dist\/(.+\.js)/);
+    if(m)loadFallback(m[1]).catch(function(){
+      reportError(new Error("GSAP could not load from "+t.src+" or "+cdnBase+m[1]+", so this preview's animations will not play."));
+    });
+  },true);
+})();
+</script>
+<meta name="hyperframes-studio-preview"><script>(function(){var seen=window.__hfPreviewErrors=[];
+addEventListener("error",function(e){seen.push(e.message||String(e))});})();</script>
+<base href="/api/projects/video-hola/preview/"><style data-hf-scene-fonts="">@font-face { font-family: "Lato L"; src: url("fonts/Lato-Regular.ttf"); }
+@font-face { font-family: "Lato L"; font-weight: 700; src: url("fonts/Lato-Bold.ttf"); }
+@font-face { font-family: "PT Serif L"; src: url("fonts/PT_Serif-Web-Regular.ttf"); }
+@font-face { font-family: "PT Serif L"; font-weight: 700; src: url("fonts/PT_Serif-Web-Bold.ttf"); }
+@font-face { font-family: "Caveat L"; src: url("fonts/Caveat-Regular.ttf"); }
+@font-face { font-family: "PT Mono L"; src: url("fonts/PTM55FT.ttf"); }</style><style data-hyperframes-text-rendering="true">html,body,*{text-rendering:geometricPrecision}</style><script data-hf-after-fonts-fallback="">document.addEventListener("DOMContentLoaded", function () {
+  if (window.__hfAfterFontsClaimed) return;
+  var T = "text/hf-after-fonts";
+  var all = [].slice.call(document.querySelectorAll('script[type="text/hf-after-fonts"], script[type="text/hf-after-fonts+module"]'));
+  if (!all.length) return;
+  console.warn("[hyperframes] the runtime has no web-font gate; composition scripts run without waiting for fonts");
+  var late = function (el) { return el.type !== T || el.matches('[defer][src], [defer][data-hf-inlined-src]'); };
+  var queue = all.filter(function (el) { return !late(el); }).concat(all.filter(late));
+  (function next() {
+    var el = queue.shift();
+    if (!el) return;
+    var s = document.createElement("script");
+    for (var i = 0; i < el.attributes.length; i++) s.setAttribute(el.attributes[i].name, el.attributes[i].value);
+    if (el.type === T) s.removeAttribute("type"); else s.type = "module";
+    s.async = el.hasAttribute("async");
+    s.text = el.text;
+    var waits = s.type !== "module" && s.hasAttribute("src") && !s.async && !s.noModule;
+    if (waits) { s.addEventListener("load", next); s.addEventListener("error", next); }
+    el.replaceWith(s);
+    if (!waits) next();
+  })();
+});
+//# sourceURL=hyperframes://after-fonts-fallback</script>
+<meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>/* Estil de la casa: paper pautat, traç negre, lletra de mà. No cal tocar-lo. */
+* {
+  margin: 0;
+}
+
+:root {
+  --tinta: #1d1c1a;
+  --gris: #6f6a61;
+  --ratlla: #dcd7cd;
+  --paper: #fbfaf7;
+  --blau: #1750a1;
+  --taronja: #9a3b12;
+}
+
+html,
+body {
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: var(--paper);
+}
+
+/* Full pautat, com el llibre */
+.paper {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-color: var(--paper);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 53px,
+    var(--ratlla) 53px,
+    var(--ratlla) 55px
+  );
+  font-family: "Lato L", sans-serif;
+  color: var(--tinta);
+}
+
+.bit,
+.globus,
+.titol,
+.subratllat,
+.nota {
+  position: absolute;
+}
+
+.titol {
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.subratllat {
+  height: 10px;
+  background: var(--tinta);
+  border-radius: 6px;
+  transform-origin: left center;
+}
+
+.nota {
+  font-family: "Caveat L", cursive;
+  font-size: 80px;
+  color: var(--blau);
+  transform: rotate(-3deg);
+}
+
+/* El globus d'en Bit */
+.globus {
+  padding: 30px 80px 50px;
+  background: #ffffff;
+  border: 6px solid var(--tinta);
+  border-radius: 48px 70px 56px 64px / 60px 44px 70px 50px;
+  font-family: "Caveat L", cursive;
+  font-size: 190px;
+  line-height: 1;
+}
+
+.globus::after {
+  content: "";
+  position: absolute;
+  left: -34px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border-left: 6px solid var(--tinta);
+  border-bottom: 6px solid var(--tinta);
+  transform: skewX(-20deg) rotate(30deg);
+}
+
+/* Una fitxa de dades */
+.fitxa {
+  width: 460px;
+  height: 320px;
+  box-sizing: border-box;
+  padding: 36px 40px;
+  background: #ffffff;
+  border: 6px solid var(--tinta);
+  border-radius: 20px 28px 22px 26px / 26px 20px 28px 22px;
+}
+
+.fitxa .nom {
+  font-weight: 700;
+  font-size: 84px;
+}
+
+.fitxa .ciutat,
+.fitxa .detall {
+  font-family: "PT Serif L", serif;
+  font-size: 48px;
+  color: var(--gris);
+}
+
+.fitxa .saldo,
+.fitxa .xifra {
+  margin-top: 12px;
+  font-family: "PT Mono L", monospace;
+  font-size: 72px;
+}
+
+.fitxa .deutor {
+  color: var(--taronja);
+}
+
+#bit {
+left: 200px;
+top: 360px;
+width: 300px;
+}
+
+#globus {
+left: 600px;
+top: 190px;
+}
+
+#titol {
+left: 600px;
+top: 600px;
+}
+
+#subratllat {
+left: 600px;
+top: 735px;
+width: 700px;
+}
+
+#nota {
+left: 600px;
+top: 785px;
+}</style>
+
+
+
+<script data-hyperframes-preview-runtime="1" src="/api/runtime.js"></script>
+<meta name="hyperframes-project-signature" content="be4aa8508182286f61379dcc">
+</head>
+<body>
+<div data-hf-id="hf-u9cy" class="paper" data-composition-id="main" data-start="0" data-duration="5" data-width="1920" data-height="1080">
+<img data-hf-render-id="bit" data-hf-id="hf-0wtc" id="bit" class="bit" src="assets/bit.svg">
+<div data-hf-id="hf-ua9t" id="globus" class="globus">Hola món!</div>
+<h1 data-hf-id="hf-iw80" id="titol" class="titol">El meu primer vídeo</h1>
+<div data-hf-id="hf-6urm" id="subratllat" class="subratllat"></div>
+<p data-hf-id="hf-gqqu" id="nota" class="nota">fet amb HTML, CSS i JavaScript</p>
+</div>
+
+<script type="text/hf-after-fonts">window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+tl.from("#bit", { y: 80, opacity: 0, duration: 0.5 }, 0.2);
+tl.from("#globus", { scale: 0, duration: 0.5, ease: "back.out(2)" }, 0.8);
+tl.from("#titol", { y: 40, opacity: 0, duration: 0.5 }, 1.6);
+tl.from("#subratllat", { scaleX: 0, duration: 0.5 }, 2.1);
+tl.from("#nota", { opacity: 0, rotation: -12, duration: 0.5 }, 2.8);
+window.__timelines["main"] = tl;
+tl.seek(0);</script></body>
+</html>

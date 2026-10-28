@@ -1,0 +1,96 @@
+/* 1. La caixa, per a tot */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Els colors, en un sol lloc */
+:root {
+    --principal: #1750a1;
+    --tinta: #1d1c1a;
+    --fons: #fbfaf7;
+    --suau: #f3f1ec;
+}
+
+/* 3. El general */
+body {
+    font-family: "PT Serif L", Georgia, serif;
+    line-height: 1.5;
+    color: var(--tinta);
+    background-color: var(--fons);
+    max-width: 56rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+/* 4. La capçalera i el menú */
+header {
+    border-bottom: 3px solid var(--tinta);
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-family: "Caveat L", cursive;
+    font-size: 1.8rem;
+    color: var(--principal);
+    margin: 0 0 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: var(--principal);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+/* El títol de la capçalera del color principal */
+header h1 {
+    color: var(--principal);
+}
+/* 5. Les seccions */
+.proces li {
+    padding: 0.3rem 0;
+}
+
+.autoconeixement {
+    background-color: var(--suau);
+    border-left: 6px solid var(--principal);
+    padding: 1rem;
+}
+/* 6. Les imatges */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid var(--tinta);
+    border-radius: 6px;
+}
+
+figcaption {
+    font-family: "Caveat L", cursive;
+    font-size: 1.4rem;
+    color: var(--principal);
+}
+
+/* 7. El peu */
+footer {
+    border-top: 1px solid var(--tinta);
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
