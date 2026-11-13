@@ -1,0 +1,3 @@
+rpolc@debian13:~/projectes/tema2/feina25$ node espais.js 
+Frase acabada en punt: un dos.
+Espais: 1
