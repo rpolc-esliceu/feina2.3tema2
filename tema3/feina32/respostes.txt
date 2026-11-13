@@ -1,0 +1,18 @@
+
+PART A
+
+A1. El que surt per pantalla:
+
+>> hola
+6 0 undefined
+60
+
+Comprovació: bé. Les prediccions són correctes.
+
+A2. Per què c val undefined?
+
+La variable c val undefined perquè la funció mostra(text) no té cap return. Només executa un console.log i no retorna cap valor.
+
+Per què la primera línia que surt és la de mostra?
+
+Perquè mostra('hola') s'executa abans dels console.log finals, quan es calcula el valor de la variable c.
